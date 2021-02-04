@@ -1,0 +1,40 @@
+# zplug
+# --------------------------------------
+export ZPLUG_HOME=~/.zplug
+source $ZPLUG_HOME/init.zsh
+
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "mafredri/zsh-async", from:github
+zplug "sindresorhus/pure", use:"pure.zsh", from:github, as:theme
+zplug "plugins/git", from:oh-my-zsh
+zplug "zsh-users/zsh-completions", depth:1, as:plugin
+zplug load
+
+# Configuration
+# --------------------------------------
+echo -n '.'
+source $HOME/.zsh/config/options.zsh
+
+echo -n '.'
+source $HOME/.zsh/config/completion.zsh
+
+echo -n '.'
+source $HOME/.zsh/config/variables.zsh
+
+echo -n '.'
+source $HOME/.zsh/config/aliases.zsh
+
+echo -n '.'
+source $HOME/.zsh/config/bindings.zsh
+
+echo -n '.'
+source $HOME/.zsh/config/syntax-highlighting.zsh
+
+# Custom tool
+if [ -f /opt/d/d.sh ]; then
+  source /opt/d/d.sh
+fi
+
+# Clear all the dots we just printed
+clear

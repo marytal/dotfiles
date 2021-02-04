@@ -1,0 +1,21 @@
+" Plugins management
+" -------------------
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'kristijanhusak/vim-hybrid-material'
+
+Plug 'junegunn/vim-easy-align'
+
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+
+call plug#end()
+
+
+" Configuration files
+" -------------------
+
+" Settings
+source $HOME/.vim/config/global-settings.vim
+
