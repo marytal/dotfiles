@@ -39,8 +39,3 @@ source ~/.zshrc
 zplug install
 tmux source-file ~/.tmux.conf
 vim +PlugInstall +qall!
-
-# Setup SSH to forward GPG Agent
-echo "StreamLocalBindUnlink yes" | sudo tee -a /etc/ssh/sshd_config
-sudo service ssh restart
-rm -rf ~/.gnupg/S*
