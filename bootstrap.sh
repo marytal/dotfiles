@@ -21,8 +21,8 @@ ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/git/gitignore_global ~/.gitignore_global
 
 # GPG
-ln -sfn ~/dotfiles/gnupg ~/.gnupg
-gpg --import ~/.gnupg/public.gpg
+gpgconf --launch dirmngr
+gpg --keyserver keys.openpgp.org --recv 07C18E0C90894E0E863AE4AB0BF7EB13314D09C9
 
 # Install FZF
 if ! command -v fzf &> /dev/null; then
