@@ -17,6 +17,10 @@ alias t=tmux
 alias vi='vim'
 alias vim='vim'
 
+alias sc='systemctl'
+alias jc='journalctl'
+alias jj='journalctl -f -u'
+
 # Edit dotfile
 alias dotedit='${EDITOR} ~/.dotfiles'
 
