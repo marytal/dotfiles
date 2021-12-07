@@ -1,9 +1,8 @@
 # This is Git's per-user configuration file.
 
 [user]
-    name = Alexandre Côté
-    email = alex.cote@shopify.com
-    signingkey = 0BF7EB13314D09C9
+    name = Mary Briskin
+    email = mary.briskin@shopify.com
 
 [color]
     diff = auto
@@ -22,7 +21,6 @@
     program = gpg
 
 [commit]
-    gpgsign = true
 
 [fetch]
     prune = true
